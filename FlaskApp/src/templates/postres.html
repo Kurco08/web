@@ -1,0 +1,35 @@
+<!--Postres Inicio-->
+{% extends "layout.html" %}
+
+{% block content%}
+
+<div class="zcool d-flex justify-content-center">
+  <h1>POSTRES</h1>
+</div>
+
+<section>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://i.ibb.co/H4VVRjt/rsz-chris-check-out-my-soundcloud-3vm-benson-all-music-platforms-search-3vm-thanks-iv17foqnwce-unsplash.jpg"
+        class="card-img-top" alt="Postres deliciosos, es un macarom!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">NIÑOS</h5>
+        <p class="card-text"> Las cosas más dulces para los pequeños demonios</p>
+        <a href="{{ url_for('niñosp') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem; height: 23.2rem;">
+      <img src="https://i.ibb.co/3Cgrz6V/rsz-scott-madore-1-wrkdjm-k4-unsplash.jpg" class="card-img-top"
+        alt="Una carne MUY JUGOSA!!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">ADULTOS</h5>
+        <p class="card-text"> Algo dulce para cortar la semana</p>
+        <a href="{{ url_for('adultosp') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

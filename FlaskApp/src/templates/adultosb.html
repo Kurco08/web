@@ -1,0 +1,36 @@
+<!--Pagina adultos bebidas-->
+{% extends "layout.html" %}
+
+{% block content%}
+
+<div class="zcool d-flex justify-content-center">
+  <h1>Bebidas para Adultos</h1>
+</div>
+
+<section>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://i.ibb.co/q5R9vtN/rsz-1140-classic-mojito-diet-espimgcacherevaeb9c6b6ab38b81f582cf7cc9a5d0c89.jpg"
+        class="card-img-top" alt="Postres deliciosos, es un macarom!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">Mojitos</h5>
+        <p class="card-text">Si la vida te da limones, has mojitos!!</p>
+        <a href="{{ url_for('bebidasadulto1') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem; height: 21.3rem;">
+      <img src="https://i.ibb.co/ns9TMt2/noche-en-mazatlc3a1n-1-1.jpg" class="card-img-top"
+        alt="Una carne MUY JUGOSA!!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">Acapulco Noche</h5>
+        <p class="card-text">Lo que pasa en Acapulco, se queda en Acapulco</p>
+        <a href="{{ url_for('bebidasadulto2') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

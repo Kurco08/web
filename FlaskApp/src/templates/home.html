@@ -1,0 +1,87 @@
+<!--Pagina de Inicio-->
+{% extends "layout.html" %}
+
+{% block content%}
+<section> 
+  <!--Menu de postres-->
+  <div class="container mt-5 mr-5 col-md-3 inline-block animated fadeInLeft retraso-2" style="margin: 2em;">
+    <div class="card" style="width: 18rem; height: 25rem;">
+      <img src="https://i.ibb.co/FxYXjR1/rsz-mockaroon-bzlhhi3mpyy-unsplash.jpg" class="card-img-top"
+        alt="Postres deliciosos, es un macarom!" style="width: 18rem; height: 25rem;">
+      <div class="card-body">
+        <h5 class="card-title pacifico">POSTRES</h5>
+        <p class="card-text"> Unos postres para chuparse los dedos!!</p>
+        <a href="{{ url_for('postres') }}" class="btn btn-success ">Ver mas</a>
+      </div>
+    </div>
+  </div>
+  <!--Menu de comidas-->
+  <div class="container mt-5 mr-5 col-md-3 inline-block vete-arriba animated fadeInUp retraso-2" style="margin: 2em;">
+    <div class="card" style="width: 18rem;height: 25rem;">
+      <img src="https://i.ibb.co/KWDjJP1/rsz-jose-ignacio-pompe-s-z-h0feibm-unsplash.jpg" class="card-img-top"
+        alt="Una carne MUY JUGOSA!!" style="width: 18rem; height: 25rem;">
+      <div class="card-body">
+        <h5 class="card-title pacifico">COMIDAS</h5>
+        <p class="card-text"> Las mejores recetas de tu vieja, porque nadie cocina mejor que tu vieja!!</p>
+        <a href="{{ url_for('comidas') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+  <!--Menu de bebidas-->
+  <div div class="container mt-5 mr-5 col-md-3 inline-block vete-arriba animated fadeInRight retraso-2" style="margin: 2em;">
+    <div class="card" style="width: 18rem; height: 25rem;">
+      <img src="https://i.ibb.co/sJPdXjT/rsz-kobby-mendez-xbftjrmic0c-unsplash.jpg" class="card-img-top"
+        alt="Ya nose que poner XD" style="width: 18rem; height: 25rem;">
+      <div class="card-body">
+        <h5 class="card-title pacifico">BEBIDAS</h5>
+        <p class="card-text"> Lo que necesitas todo el año, más si estas con finales!!</p>
+        <a href="{{ url_for('bebidas') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+</section> <!--Pasa imagenes de recetas-->
+<div class="bd-example card">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner"> 
+      <div class="carousel-item active"> <!--Lemon Pie-->
+        <img src="https://i.ibb.co/FJf4VGN/lemon-pie-1-1.jpg" class="d-block w-100 rounded-lg" alt="postre delicioso">
+        <div class="carousel-caption d-none d-md-block zcool font-weight-bold">
+          <h1 style="color: rgb(0, 0, 0);">RECETA DEL DÍA</h1>
+          <a href="{{ url_for('postresadultos1') }}" class="btn btn-success">Ver mas</a>
+        </div>
+      </div>
+      <div class="carousel-item"> <!--Pulpitos-->
+        <img src="https://i.ibb.co/0mMjCfx/rsz-39839.jpg" class="d-block w-100 rounded-lg" alt="una buena bibida">
+        <div class="carousel-caption d-none d-md-block zcool font-weight-bold">
+          <h1 style="color: rgb(0, 0, 0);">RECETA DE LA SEMANA</h1>
+          <bottom>
+            <a href="{{ url_for('comidasniños1') }}" class="btn btn-success">Ver mas</a>
+            <bottom>
+        </div>
+      </div>
+      <div class="carousel-item"> <!--Rollitos de carne-->
+        <img src="https://i.ibb.co/2Ygn35y/rsz-40898.jpg" class="d-block w-100 rounded-lg" alt="carne con panceta">
+        <div class="carousel-caption d-none d-md-block zcool font-weight-bold">
+          <h1 style="color: rgb(255, 94, 0);">RECETA DEL MES</h1>
+          <bottom>
+            <a href="{{ url_for('comidasadultos1') }}" class="btn btn-success">Ver mas</a>
+            <bottom>
+        </div>
+      </div>
+    </div> <!--Boton antes y proximo-->
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+{% endblock %}

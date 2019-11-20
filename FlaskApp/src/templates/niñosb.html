@@ -1,0 +1,33 @@
+<!--Bebidas para Niños-->
+{% extends "layout.html" %}
+
+{% block content%}
+
+<div class="zcool d-flex justify-content-center">
+  <h1>Bebidas para Niños</h1>
+</div>
+
+<section>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.ibb.co/85YN8xc/rsz-0d836f13187cfa3d56cabac26087e106.jpg" class="card-img-top"
+        alt="Postres deliciosos, es un macarom!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">Bebida caliente con Malvaviscos</h5>
+        <p class="card-text">De malvaviscos en malvaviscos, me gusta el batido y el bochinche!!</p>
+        <a href="{{ url_for('bebidasniños1') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem;height: 24.5rem;">
+      <img src="https://i.ibb.co/3ywrDPH/skinny-milkshake-oreo.jpg" class="card-img-top" alt="Una carne MUY JUGOSA!!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">Batido de galletas Oreo</h5>
+        <p class="card-text">Bate, bate, el chocolate!!</p>
+        <a href="{{ url_for('bebidasniños2') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!--Pagina postres adultos-->
+{% extends "layout.html" %}
+
+{% block content%}
+
+<div class="zcool d-flex justify-content-center">
+  <h1>Postres para Adultos</h1>
+</div>
+
+<section>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.ibb.co/FJf4VGN/lemon-pie-1-1.jpg" class="card-img-top"
+        alt="Postres deliciosos, es un macarom!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">Lemon Pie</h5>
+        <p class="card-text">Este Pie no huele a quesos, sino a limón</p>
+        <a href="{{ url_for('postresadultos1') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem; height: 23rem;">
+      <img src="https://i.ibb.co/mG7PsgL/rsz-42520.jpg" class="card-img-top" alt="Una carne MUY JUGOSA!!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">Tiramisu</h5>
+        <p class="card-text">Tirame arriba!!</p>
+        <a href="{{ url_for('postresadultos2') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

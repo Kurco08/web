@@ -1,0 +1,36 @@
+<!--Comidas Inicio-->
+{% extends "layout.html" %}
+
+{% block content%}
+
+<div class="zcool d-flex justify-content-center">
+  <h1>Comidas</h1>
+</div>
+
+<section>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://i.ibb.co/H4VVRjt/rsz-chris-check-out-my-soundcloud-3vm-benson-all-music-platforms-search-3vm-thanks-iv17foqnwce-unsplash.jpg"
+        class="card-img-top" alt="Postres deliciosos, es un macarom!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">NIÑOS</h5>
+        <p class="card-text"> rico, rico, riquisimos!!</p>
+        <a href="{{ url_for('niñosc') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mr-5 col-md-3 inline-block" style="margin: 10em;">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.ibb.co/3Cgrz6V/rsz-scott-madore-1-wrkdjm-k4-unsplash.jpg" class="card-img-top"
+        alt="Una carne MUY JUGOSA!!">
+      <div class="card-body">
+        <h5 class="card-title pacifico">ADULTOS</h5>
+        <p class="card-text"> Para comer sin culpa</p>
+        <a href="{{ url_for('adultosc') }}" class="btn btn-success">Ver mas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

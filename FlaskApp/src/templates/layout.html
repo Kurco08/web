@@ -1,0 +1,80 @@
+<!--Codigo BASE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <title>Te juro que no es TOXICO</title> <!--Titulo de pestaña-->
+  <!--BOOSTRAP 4, interfaz web(biblioteca)-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Custom css, PERSONALIZADO (Biblioteca)-->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+  <!--jquery, Movimiento de imagen de recetas del dia-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!--Animacion-->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/animate.css')}}">
+</head>
+
+<body> <!--Cuerpo-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #faa931;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="https://i.ibb.co/Mg7dGjp/pagina-web.jpg" class="rounded-circle" width="60" height="60" alt=""> <!--Logo-->
+        </div>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> <!--Barra Inicio, Contactos e Integrantes-->
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active"> 
+            <a class="nav-link zcool" href="/">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zcool" href="{{ url_for('contactos') }}">Contactos</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="nav-link zcool"  href="{{ url_for('integrantes') }}" type="submit">Integrantes</a>
+        </form>
+      </div>
+    </nav>
+    <div class="cover d-flex justify-content-center align-items-center flex-column"> <!--Imagen de fondo del titulo de la pagina-->
+      <h1 class="zcool shadow animated tada retraso-1">
+        ¡¡TE JURO QUE NO ES TOXICO!!
+      </h1>
+      <P2 class="shadow animated lightSpeedIn retraso-1">
+        Mata a tu suegra de un susto, por lo bien que cocinas
+      </P2>
+    </div>
+
+  </header>
+
+  <div class="container p-4"> <!--Interfaces que se comunica con los otros html-->
+    {% block content%}
+    {% endblock %}
+  </div>
+  <div class="footer"> <!--Pie de pagina-->
+    <p class="rights zcool shadow">UNA BUENA COMIDA NO ES AQUELLA DE BUEN SABOR O SIN QUEMAR, SINO ES LA QUE NOS ESFORZAMOS POR
+      HACER.
+    </p>
+    <a href="#" class=" volver btn btn-success shadow">SUBIR</a> <!--Boton subir-->
+    </p>
+  </div>
+</body>
+
+</html>
